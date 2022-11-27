@@ -14,6 +14,5 @@ async def retrieve_flight(flight_code):
     data = get_flight_data(flight_code)
     return data
 
-#merged old main with flighttracker.py. cool!
 if __name__ == '__main__':
-    uvicorn.run('flighttracker:app', host='0.0.0.0', port=8000, reload=True)
+    uvicorn.run('main:app', host='0.0.0.0', port=8000, reload=True)
