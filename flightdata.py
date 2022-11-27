@@ -55,6 +55,7 @@ def create_API_bot(api_name):
     else:
         raise APIError(f'Unknown API {api_name}.')
 
+#Our orchestrator function so far. there is still tons of work to do
 def get_flight_data(flight_code):
     '''
     This function receives an IATA flight code and returns a dictionary with all the info that the app could find online.
